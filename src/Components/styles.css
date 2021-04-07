@@ -15,11 +15,7 @@
     font-weight: bold;
     margin: 1.25% 2%;
 }
-.application {
-    /* background-color: #deeeed; */
-    background-color: #bcdddc;
 
-}
 .graph{
     background-color: white;
     border-radius: 26px;
@@ -27,7 +23,7 @@
     border-radius: 6px;
 
     margin: 0px 26px 22px 0px;
-    padding: 25px;
+    padding: 25px 10px;
 }
 .graph:hover{
     box-shadow: 1px 2px 2px 1px #cccccc;
@@ -38,11 +34,15 @@
 .charts {
     text-align: center;
     display: flex;
-    margin: 12px 70px 2px 40px;
+    margin: 12px 95px 2px 40px;
     
     /* background-color: lightslategray; */
     
 }
 
-
+.graphInfo {
+    height: 400px;
+    width: 700px;
+    max-width: 100%;
+}
 

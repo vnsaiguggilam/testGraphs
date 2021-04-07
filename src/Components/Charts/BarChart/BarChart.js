@@ -39,6 +39,15 @@ class BarGraph extends Component {
         title: {
             text: "Bar Chart"
         },
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            type: "cross",
+            label: {
+              backgroundColor: "#6a7985"
+            }
+          }
+        },
         toolbox: {
             show: true,
             feature: {
@@ -73,7 +82,7 @@ class BarGraph extends Component {
     return (
       <div>
         <div>
-          <div id="Bar" style={{ width: 700, height: 400 }} />
+          <div id="Bar" className="graphInfo" />
         </div>
       </div>
     );

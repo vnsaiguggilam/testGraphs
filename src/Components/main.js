@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+// import Loaders from '../Common/Loader';
 import BarChart from './Charts/BarChart/BarChart';
 import LineGraph from './Charts/LineChart/LineGraph';
 import ScatterChart from './Charts/ScatterChart/ScatterChart';
@@ -15,7 +16,7 @@ export default class Main extends Component {
     render() {
         return (
             <>
-            <div className="application">
+            <div className="">
                 <div className="navBar">
                     <div className="col-sm-2">
                     <p className="nameHeader">Siemens - Mindsphere</p> 
@@ -36,7 +37,9 @@ export default class Main extends Component {
                         <div className="col-sm-6 graph">
                             <ScatterChart />
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-sm-6 ">
+                           
+
                         </div>
                     </div>
                 </div>

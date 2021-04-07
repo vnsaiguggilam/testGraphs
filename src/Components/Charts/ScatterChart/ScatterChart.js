@@ -38,6 +38,15 @@ class ScatterChart extends Component {
         title: {
             text: "Scatter Chart"
         },
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            type: "cross",
+            label: {
+              backgroundColor: "#6a7985"
+            }
+          }
+        },
         toolbox: {
             show: true,
             feature: {
@@ -71,7 +80,7 @@ class ScatterChart extends Component {
     return (
       <div>
         <div>
-          <div id="Scatter" style={{ width: 700, height: 400 }} />
+          <div id="Scatter" className="graphInfo" />
         </div>
       </div>
     );

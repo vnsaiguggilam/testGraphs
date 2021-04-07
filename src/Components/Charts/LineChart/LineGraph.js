@@ -38,14 +38,23 @@ class LineGraph extends Component {
         title: {
             text: "Line Chart"
         },
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            type: "cross",
+            label: {
+              backgroundColor: "#6a7985"
+            }
+          }
+        },
         toolbox: {
             show: true,
             feature: {
-                mark: { show: true },
-                dataView: { show: true, readOnly: true },
-                // magicType: { show: true, type: ["line", "bar"] },
-                // restore: { show: true },
-                saveAsImage: { show: true }
+              mark: { show: true },
+              dataView: { show: true, readOnly: true },
+              // magicType: { show: true, type: ["line", "bar"] },
+              // restore: { show: true },
+              saveAsImage: { show: true }
             }
             
         },
@@ -72,8 +81,8 @@ class LineGraph extends Component {
   render() {
     return (
       <div>
-        <div>
-          <div id="Line" style={{ width: 700, height: 400 }} />
+        <div className='col-md-12'>
+          <div id="Line" className="graphInfo" />
         </div>
       </div>
     );
